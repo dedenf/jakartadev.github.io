@@ -6,3 +6,4 @@ Gemfile.lock
 **/.sass-cache
 **/.sass-cache/*
 _site/
+.vscode/

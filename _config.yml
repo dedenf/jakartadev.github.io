@@ -2,10 +2,10 @@
 title:       JakartaDev
 email:       'dedenf@gmail.com'
 description: "[Almost] Daily tech discoveries"
-site_subtitle: 'Tech news, howto, tutorials.'
+site_subtitle: 'Tech news, HowTos, Tutorials.'
 baseurl:     ""
-url:         "https://jakartadev.org"
-site_short:  'jakartadev.org'
+url:         "https://jakartadev.com"
+site_short:  'jakartadev.com'
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
@@ -15,7 +15,7 @@ author:
   name:           'Deden Fathurahman'
   url:            https://notes.dedenf.com/
   handle:         "dedenf"
-  email:          dedenf@jakartadev.org
+  email:          dedenf@jakartadev.com
   twitter:        "@jakartadev"
   github:         "jakartadev"
 
