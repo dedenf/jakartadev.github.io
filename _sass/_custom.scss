@@ -20,10 +20,11 @@
 }
 .list-inline li {
     list-style: none;
+    margin-right: .6rem;
     @media (min-width:1200px){
         display: inline-block;
     }
-    margin-right: .6rem;
+    
 }
 
 footer .meta {

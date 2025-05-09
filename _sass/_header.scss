@@ -23,12 +23,13 @@
 }
 
 .site-header nav a {
+  color: $nav-color;
   @media (min-width:320px) and (max-width:1199px) {
     font-size: .8em;
   }
   @media (min-width:1200px){ 
   }
-  color: $nav-color;
+ 
   
 }
 

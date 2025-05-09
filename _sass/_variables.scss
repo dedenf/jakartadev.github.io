@@ -1,5 +1,5 @@
 // Typography
-$base-font-size: 1.2em !default;
+$base-font-size: 1em !default;
 $bold-font-weight: bold !default;
 $font-family: "Bitter", 'Enriqueta', 'Merriweather', Georgia, 'Times New Roman', serif !default;
 $blockquote-font-family-serif: 'Bitter', 'Enriqueta', 'Merriweather', Georgia, 'Times New Roman', serif !default;
@@ -59,7 +59,8 @@ $darken-4: rgba(#000,.5) !default;
 $important: #fff71c;
 // Links
 $link-color: $blue;
-$link-hover-color: darken($blue, 40%);
+$link-hover-color: color.scale($blue, $lightness: -40%);
+
 
 // Breakpoints
 $breakpoint-md: '(min-width: 52em)';
@@ -73,7 +74,7 @@ $space-3: 2rem !default;
 $space-4: 4rem !default;
 
 // Buttons
-$button-font-size: inherit !default;
+$button-font-size: inherit !default; 
 $button-font-weight: normal !default;
 $button-line-height: 1.125rem !default;
 $button-padding-y: .5rem !default;

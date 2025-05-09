@@ -2,6 +2,9 @@
 # The scss file which include files from _sass/
 ---
 @charset "UTF-8";
+@use "sass:math";
+@use "sass:color"; 
+
 
 /*!
 * Pixyll - A simple, beautiful Jekyll theme that's mobile first.
