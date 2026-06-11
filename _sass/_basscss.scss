@@ -9,20 +9,20 @@
 
 */
 
-@import 'basscss/base-buttons';
-@import 'basscss/base-forms';
-@import 'basscss/base-reset';
-@import 'basscss/base-typography';
+@use 'basscss/base-buttons' as *;
+@use 'basscss/base-forms' as *;
+@use 'basscss/base-reset' as *;
+@use 'basscss/base-typography' as *;
 
-@import 'basscss/buttons-blue';
+@use 'basscss/buttons-blue' as *;
 
-@import 'basscss/syntax-highlighting';
-@import 'basscss/color-base';
-@import 'basscss/colors';
+@use 'basscss/syntax-highlighting' as *;
+@use 'basscss/color-base' as *;
+@use 'basscss/colors' as *;
 
-@import 'basscss/utility-headings';
-@import 'basscss/utility-typography';
-@import 'basscss/utility-white-space';
-@import '_custom_colors.scss';
-@import '_custom.scss';
-@import '_font.scss';
+@use 'basscss/utility-headings' as *;
+@use 'basscss/utility-typography' as *;
+@use 'basscss/utility-white-space' as *;
+@use 'custom_colors' as *;
+@use 'custom' as *;
+@use 'font' as *;

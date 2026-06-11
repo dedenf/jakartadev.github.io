@@ -1,4 +1,5 @@
 /* Basscss Base Typography */
+@use '../variables' as *;
 
 body {
   font-family: $font-family-sans;
