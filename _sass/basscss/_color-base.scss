@@ -2,19 +2,19 @@
 @use '../variables' as *;
 
 body {
-  color: #101820;
-  background-color: white;
+  color: var(--text-color);
+  background-color: var(--bg-color);
   -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: #00A0FF;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: none;
-  
+
 }
 a:visited {
   text-decoration: none;
@@ -22,7 +22,8 @@ a:visited {
 
 pre,
 code {
-  background-color: $lighter-gray;
+  background-color: var(--code-bg);
+  color: var(--code-text);
   border-radius: $border-radius;
 }
 
@@ -30,5 +31,5 @@ hr {
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: $border-width;
-  border-bottom-color: $border-color;
+  border-bottom-color: var(--border-color);
 }

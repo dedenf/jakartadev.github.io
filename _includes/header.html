@@ -5,6 +5,9 @@
       <div class="subtext-title">{{ site.description }}</div>
       <nav class="site-nav">
         {% include navigation.html %}
+        <button id="theme-toggle" class="nav-item p1" aria-label="Toggle theme">
+          <span id="theme-toggle-icon"></span>
+        </button>
       </nav>
       <div class="clearfix"></div>
       {% if site.show_social_icons %}

@@ -1,5 +1,50 @@
 @use "sass:color";
 
+:root {
+  --bg-color: #ffffff;
+  --text-color: #101820;
+  --link-color: #00A0FF;
+  --header-bg: #fafafa;
+  --footer-bg: #fafafa;
+  --border-color: #eeeeee;
+  --code-bg: #fafafa;
+  --code-text: #333333;
+  --nav-link-color: #444444;
+  --footer-text: #7a7a7a;
+  --blockquote-bg: #ffffff;
+}
+
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --link-color: #4db8ff;
+  --header-bg: #1a1a1a;
+  --footer-bg: #1a1a1a;
+  --border-color: #333333;
+  --code-bg: #1e1e1e;
+  --code-text: #d4d4d4;
+  --nav-link-color: #bbbbbb;
+  --footer-text: #999999;
+  --blockquote-bg: #1e1e1e;
+}
+
+// System preference fallback
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --link-color: #4db8ff;
+    --header-bg: #1a1a1a;
+    --footer-bg: #1a1a1a;
+    --border-color: #333333;
+    --code-bg: #1e1e1e;
+    --code-text: #d4d4d4;
+    --nav-link-color: #bbbbbb;
+    --footer-text: #999999;
+    --blockquote-bg: #1e1e1e;
+  }
+}
+
 // Typography
 $base-font-size: 1em !default;
 $bold-font-weight: bold !default;
@@ -76,7 +121,7 @@ $space-3: 2rem !default;
 $space-4: 4rem !default;
 
 // Buttons
-$button-font-size: inherit !default; 
+$button-font-size: inherit !default;
 $button-font-weight: normal !default;
 $button-line-height: 1.125rem !default;
 $button-padding-y: .5rem !default;
