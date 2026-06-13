@@ -6,7 +6,7 @@
 }
 
 .site-header a {
-  color: $header-color;
+  color: var(--text-color);
   font-size: $h3;
   font-weight: $header-font-weight;
   background-image: none;
@@ -21,18 +21,18 @@
 
 .site-nav {
   padding-top: $nav-padding;
-  
+
 }
 
 .site-header nav a {
-  color: $nav-color;
+  color: var(--nav-link-color);
   @media (min-width:320px) and (max-width:1199px) {
     font-size: .8em;
   }
-  @media (min-width:1200px){ 
+  @media (min-width:1200px){
   }
- 
-  
+
+
 }
 
 .site-header nav a:hover,
@@ -41,9 +41,9 @@
 .site-header nav a.nav-active:hover,
 .site-header nav a.nav-active:focus,
 .site-header nav a.nav-active:active {
-  color: $nav-link-color;
+  color: var(--link-color);
   opacity: 1;
-  border-bottom: $nav-link-border-bottom;
+  border-bottom: 2px solid var(--link-color);
 }
 
 .site-header nav a.nav-active {
