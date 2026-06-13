@@ -1,24 +1,23 @@
 # Site settings
-title:       JakartaDev
-email:       'dedenf@gmail.com'
+title: JakartaDev
+email: "dedenf@gmail.com"
 description: "[Almost] Daily tech discoveries"
-site_subtitle: 'Tech news, HowTos, Tutorials.'
-baseurl:     ""
-url:         "https://jakartadev.com"
-site_short:  'jakartadev.com'
+site_subtitle: "Tech news, HowTos, Tutorials."
+baseurl: ""
+url: "https://jakartadev.com"
+site_short: "jakartadev.com"
 date_format: "%b %-d, %Y"
 header_pages:
- - about.md
- - contact.html
+  - _pages/about.md
+  - contact.html
 
 author:
-  name:           'Deden Fathurahman'
-  url:            https://notes.dedenf.com/
-  handle:         "dedenf"
-  email:          dedenf@jakartadev.com
-  twitter:        "@jakartadev"
-  github:         "jakartadev"
-
+  name: "Deden Fathurahman"
+  url: https://notes.dedenf.com/
+  handle: "dedenf"
+  email: dedenf@jakartadev.com
+  twitter: "@jakartadev"
+  github: "jakartadev"
 
 sass:
   style: compressed
@@ -44,18 +43,16 @@ exclude:
   - node_modules
 
 # Tags
-tag_page_dir:         tag
-tag_page_layout:      tag_page
-tag_permalink_style:  pretty
-
+tag_page_dir: tag
+tag_page_layout: tag_page
+tag_permalink_style: pretty
 
 # Pages path
 defaults:
   - scope:
-      path: '_pages'
+      path: "_pages"
     values:
       permalink: /:basename:output_ext
-
 
 # Google services
 google_verification:
@@ -67,10 +64,10 @@ google_tag_manager:
 bing_verification:
 
 # Optional features
-animated:             false
-show_related_posts:   false
-show_post_footers:    false
-show_social_icons:    false
+animated: false
+show_related_posts: false
+show_post_footers: false
+show_social_icons: false
 ajaxify_contact_form: false
 enable_mathjax: true
 extended_fonts: true
@@ -85,7 +82,7 @@ fb_page_id:
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname: 
+disqus_shortname:
 
 # Facebook Comments plugin
 # (leave blank to disable Facebook Comments, otherwise set it to true)
@@ -126,42 +123,42 @@ share_hackernews: false
 
 text:
   pagination:
-    newer: 'Newer'
-    older: 'Older'
+    newer: "Newer"
+    older: "Older"
   share_buttons:
-    text:         'Share this post!'
-    facebook:     'Share on Facebook'
-    twitter:      'Share on Twitter'
-    googleplus:   'Share on Google+'
-    linkedin:     'Share on LinkedIn'
-    digg:         'Share on Digg'
-    tumblr:       'Share on Tumblr'
-    reddit:       'Share on Reddit'
-    stumbleupon:  'Share on StumbleUpon'
-    hackernews:   'Share on Hacker News'
+    text: "Share this post!"
+    facebook: "Share on Facebook"
+    twitter: "Share on Twitter"
+    googleplus: "Share on Google+"
+    linkedin: "Share on LinkedIn"
+    digg: "Share on Digg"
+    tumblr: "Share on Tumblr"
+    reddit: "Share on Reddit"
+    stumbleupon: "Share on StumbleUpon"
+    hackernews: "Share on Hacker News"
   post:
-    updated:        'Updated'
-    minute_read:    'minute read'
-    related_posts:  'Related Posts'
+    updated: "Updated"
+    minute_read: "minute read"
+    related_posts: "Related Posts"
   index:
-    coming_soon: 'Coming soon...'
+    coming_soon: "Coming soon..."
   contact:
-    email:    'Email Address'
-    content:  'What would you like to say?'
-    subject:  'New submission!'
-    submit:   'Say Hello'
+    email: "Email Address"
+    content: "What would you like to say?"
+    subject: "New submission!"
+    submit: "Say Hello"
     ajax:
-      sending:  'sending..'
-      sent:     'Message sent!'
-      error:    'Error!'
-  thanks: 'Thanks for contacting us. We will reply as soon as possible.'
-  og_locale: 'en_US'
+      sending: "sending.."
+      sent: "Message sent!"
+      error: "Error!"
+  thanks: "Thanks for contacting us. We will reply as soon as possible."
+  og_locale: "en_US"
 
 # Build settings
 redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
-markdown:  kramdown
+  extensions: ["smart", "tables", "with_toc_data"]
+markdown: kramdown
 permalink: /:title/
-paginate:  6
+paginate: 6
 paginate_path: "page/:num"
 excerpt_separator: "<!--more-->"
