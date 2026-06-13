@@ -1,4 +1,20 @@
 <head>
+    <script>
+      (function() {
+        try {
+          var theme = localStorage.getItem('theme');
+          var supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+          if (!theme && supportDarkMode) theme = 'system';
+          if (!theme) theme = 'light';
+
+          if (theme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else if (theme === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        } catch (e) {}
+      })();
+    </script>
     {% if site.google_tag_manager %}
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -82,7 +98,7 @@
     <meta name="twitter:data1" content="{{ site.author.name }}">
     <meta name="twitter:label2" content="Filed under">
     <meta name="twitter:data2" content="{% for tag in page.tags %}{{ tag }}{% unless forloop.last %}, {% endunless %}{% endfor %}">{% endif %}
-    
+
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="{{ "/apple-touch-icon-57x57.png" | relative_url }}">
     <link rel="apple-touch-icon" sizes="114x114" href="{{ "/apple-touch-icon-114x114.png" | relative_url }}">
@@ -99,7 +115,7 @@
     <link rel="icon" type="image/png" href="{{ "/favicon-16x16.png" | relative_url }}" sizes="16x16">
     <link rel="icon" type="image/png" href="{{ "/favicon-32x32.png" | relative_url }}" sizes="32x32">
     <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}">
-    
+
     {% if site.google_analytics %}
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132305607-1"></script>
     <script>
