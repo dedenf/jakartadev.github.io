@@ -7,3 +7,5 @@ Gemfile.lock
 **/.sass-cache/*
 _site/
 .vscode/
+.superpowers/
+.jekyll-cache/
